@@ -1,0 +1,2 @@
+# lottoaddress [pubkey]
+```

@@ -1,0 +1,2 @@
+# rewardsaddress [pubkey]
+```

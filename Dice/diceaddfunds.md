@@ -1,0 +1,2 @@
+# diceaddfunds name fundingtxid amount
+```

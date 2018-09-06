@@ -1,0 +1,2 @@
+# paxprices "base" "rel" maxsamples
+```

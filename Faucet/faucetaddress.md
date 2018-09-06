@@ -1,0 +1,2 @@
+# faucetaddress [pubkey]
+```

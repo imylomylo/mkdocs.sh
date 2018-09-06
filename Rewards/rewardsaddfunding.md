@@ -1,0 +1,2 @@
+# rewardsaddfunding name fundingtxid amount
+```

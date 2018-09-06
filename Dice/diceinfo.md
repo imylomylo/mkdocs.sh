@@ -1,0 +1,2 @@
+# diceinfo fundingtxid
+```

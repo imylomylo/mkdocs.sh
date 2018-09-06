@@ -1,0 +1,10 @@
+# zcrawkeygen
+
+DEPRECATED. Generate a zcaddr which can send and receive confidential values.
+
+Output: {
+  "zcaddress": zcaddr,
+  "zcsecretkey": zcsecretkey,
+  "zcviewingkey": zcviewingkey,
+}
+```

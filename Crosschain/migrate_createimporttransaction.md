@@ -1,0 +1,4 @@
+# migrate_createimporttransaction burnTx payouts
+
+Create an importTx given a burnTx and the corresponding payouts, hex encoded
+```

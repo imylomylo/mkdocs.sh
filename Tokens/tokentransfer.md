@@ -1,0 +1,2 @@
+# tokentransfer tokenid destpubkey amount
+```

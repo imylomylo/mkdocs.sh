@@ -1,0 +1,2 @@
+# diceaddress [pubkey]
+```

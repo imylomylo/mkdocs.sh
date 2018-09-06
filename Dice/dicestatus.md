@@ -1,0 +1,2 @@
+# dicestatus name fundingtxid bettxid
+```

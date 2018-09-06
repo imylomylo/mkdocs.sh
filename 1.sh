@@ -19,14 +19,18 @@ do
   COMMAND=`echo ${line} | awk '{print $1}'`
   echo "getting help for ${COMMAND}"
   HELPRAW=$(komodo-cli help ${COMMAND})
-  HELP=`echo "${HELPRAW}" | sed 's/Examples\:/Examples\:\`\`\`/'`
-  HELP=`echo "${HELP}" | sed 's/Arguments\:/Arguments\:\`\`\`/'`
-  HELP=`echo "${HELP}" | sed 's/Response\:/\`\`\`Response\:\`\`\`/'`
-  HELP=`echo "${HELP}" | sed 's/Result\:/\`\`\`Result\:\`\`\`/'`
-  HELP="${HELP}\`\`\`"
+  HELP=`echo "${HELPRAW}" | sed 's/Examples\:/\n\`\`\`\nExamples\:\n\`\`\`/'`
+  HELP=`echo "${HELP}" | sed 's/Arguments\:/\nArguments\:\n\`\`\`/'`
+  HELP=`echo "${HELP}" | sed 's/Response\:/\`\`\`\nResponse\:\n\`\`\`/'`
+  HELP=`echo "${HELP}" | sed 's/Result\:/\`\`\`\nResult\:\n\`\`\`/'`
+  HELP="${HELP}
+\`\`\`"
   echo "HELP > ${CURRENTDIR}/${COMMAND}"
-  echo "${HELP}" > ${CURRENTDIR}/${COMMAND}
+  echo "${HELP}" > ${CURRENTDIR}/${COMMAND}.md
+  sed -i '1s/^/# /' ${CURRENTDIR}/${COMMAND}.md
   #sleep .5
  fi
 # echo "${line}"
 done
+echo "# mkdocs.sh
+Running this shell script at least saves you from a lot of c+p." > README.md

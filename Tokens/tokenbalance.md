@@ -1,0 +1,2 @@
+# tokenbalance tokenid [pubkey]
+```
